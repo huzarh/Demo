@@ -37,7 +37,7 @@ app.use(passport.session());
 // connect to mongodb
 app.use(
 	cors({
-		origin:[ "http://localhost:3000","http://127.0.0.1:3000"],
+		origin:[ "http://localhost:3000","http://127.0.0.1:3000","https://dome-6aa15.web.app"],
 		methods: "GET,POST,PUT,DELETE",
 		credentials: true,
 	})
