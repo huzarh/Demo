@@ -1,12 +1,12 @@
 const express = require("express");
 
-const {profile,twitterAuthBack } = require("../controller/auth");
+const {login,signup } = require("../controller/auth");
 
 const router = express.Router();
 
 // "/api/v1/users"
-
-router.route("/profile").get(profile);
-router.route("/auth").get(twitterAuthBack);
+ 
+router.route("/login").post(login);
+router.route("/signup").post(signup);
 
 module.exports = router;
